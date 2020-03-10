@@ -20,7 +20,7 @@ class Recomendation extends Component {
     
     Axios({
       method: "get",
-      url: `https://api.themoviedb.org/3/movie/${match.params.id}/recommendations?api_key=7fe26f747001d020e92fed615ac69b70`
+      url: `https://api.themoviedb.org/3/movie/${match.params.id}/similar?api_key=7fe26f747001d020e92fed615ac69b70`
     }).then(res => {
       this.setState({ data: res.data.results });
     });
@@ -81,8 +81,6 @@ class Recomendation extends Component {
             const star = data.vote_average;
                 return ( 
                   <div key={index} className='cardRecomend'>
-
-                
                   <Card>
                   <Card.Img
                     variant="top"

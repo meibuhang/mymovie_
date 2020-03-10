@@ -190,7 +190,7 @@ class Trailer extends Component {
         <Card style={{border:'none'}}>
       <Row>
         <Col>
-        <Card.Header as='h6' className='cardHeader'>Recomendation</Card.Header>
+        <Card.Header as='h6' className='cardHeader'>Similiar Movies</Card.Header>
         <Card.Body className="recomendationCard">
         <Recomendation id={data.id}/>
         </Card.Body>

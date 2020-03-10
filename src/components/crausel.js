@@ -17,7 +17,7 @@ class Crausel extends Component {
     Axios({
       method: "get",
       url:
-        "https://api.themoviedb.org/3/movie/now_playing?api_key=7fe26f747001d020e92fed615ac69b70"
+        "https://api.themoviedb.org/3/movie/popular?api_key=7fe26f747001d020e92fed615ac69b70"
     }).then(res => {
       this.setState({ data: res.data.results });
     });
