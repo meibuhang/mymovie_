@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Assistant|EB+Garamond|Libre+Baskerville|Libre+Franklin|Source+Serif+Pro&display=swap');
+body {
+  background-color: #ffffff;
+  margin: 0 auto;
+  color: rgb(100, 100, 100);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+ul li {
+  padding-right: 5%;
+}
+
+h3 {
+  font-family: 'Anton';
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contentDetailMovie {
+  margin: 0 5%;
+  padding-top: 5%;
+}
+
+.linkBtn, .linkBtnIcon {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.linkBtn:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.linkBtnIcon:hover {
+  color: #9fc1ff;
+  text-decoration: none;
+}
+
+.content {
+  background-color: #ffffff;
+  margin: 0 5%;
+}
+
+.contents {
+  background-color: #ffffff;
+  margin: 0 5.8%;
+}
+
+.cardsMovie {
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.imageCard {
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
+
+.gridFilm {
+  width: 100%;
+  -webkit-transition: width 2s;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 2s;
+  margin-bottom: 15%;
+}
+
+.gridFilm:hover .details {
+  width: 100%;
+  height: 59%;
+  top: 29.8%;
+  left: 50%;
+  opacity: 0.8;
+  color: #ffffff;
+  background-color: #000;
+  transition-duration: 0.1s;
+}
+
+.cardRecomend:hover .details {
+  width: 100%;
+  height: 75%;
+  top: 34%;
+  left: 50%;
+  opacity: 0.8;
+  color: #ffffff;
+  background-color: #000;
+  transition-duration: 0.1s;
+}
+
+.componentBtn {
+  right: 0;
+  left: 0;
+  position: relative;
+  top: 10%;
+  overflow: hidden;
+}
+
+.componentBtn Button {
+  margin-top: 5%;
+  width: 50%;
+  margin-left: 2%;
+}
+
+.moreBtn Button {
+  background-color: #b3b3b3;
+  border: none;
+  margin-top: 1%;
+  color: #fff;
+}
+
+.cornerBtn {
+  position: fixed;
+  background-color: goldenrod;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  height: 50px;
+  margin: 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 15px;
+  clear: both;
+  display: table;
+}
+
+.cornerBtn span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  font-size: 2.5vw;
+  padding-left: 15%;
+}
+
+.gridFilm:hover .launch {
+  top: 0;
+  left: 0;
+  transition-duration: 0.1s;
+  background-color: transparent;
+  color: #000;
+  opacity: 0.1;
+}
+
+.details {
+  position: absolute;
+  text-align: center;
+  font-weight: bolder;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out 0s;
+  overflow: hidden;
+}
+
+.fadeIn {
+  top: 80%;
+}
+
+.title {
+  font-size: 1.2vw;
+  font-weight: 700;
+  font-family: 'Libre Baskerville';
+  margin: 0;
+}
+
+.text {
+  font-size: 0.9vw;
+  font-family: 'Libre Baskerville';
+  padding: 5px 0;
+  margin: 0;
+  color: goldenrod;
+}
+
+.launch {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: gold;
+  color: #d30000;
+  font-weight: 500;
+  top: 10px;
+  left: -15px;
+}
+
+.foot {
+  margin: 0;
+}
+
+.carousel {
+  height: 100%;
+  right: 0;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.carousel__viewport {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.playbutton {
+  margin: 0 auto;
+  padding-bottom: 25%;
+}
+
+.play {
+  font-size: 15vw;
+}
+
+.star {
+  fill: #aaa;
+}
+
+.star.set {
+  fill: gold;
+}
+
+.cardFoo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.cardFoo span {
+  font-weight: 500;
+  margin-left: 5%;
+}
+
+.cardHeader {
+  background-color: #252121;
+  color: #fff;
+  font-weight: bold;
+}
+
+.genre {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.genre ul {
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.genreList {
+  color: rgb(53, 53, 53);
+  background-color: #bdbdbd;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 2px 5px;
+  font-weight: bold;
+  display: block;
+}
+
+/*  */
+
+.tabpanel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabheader {
+  margin: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  line-height: 5vw;
+  width: 80%;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2vw;
+  border-bottom: 0.1px solid rgb(238, 238, 238);
+}
+
+.tab--selected {
+  color: gold;
+  font-weight: 500;
+  padding-Right: 15%;
+  border-bottom: 2px solid gold;
+}
+
+.tab:hover {
+  color: gold;
+  font-weight: 500;
+}
+
+.tabcontent {
+  margin: 0 auto;
+}
+
+.btnView {
+  margin: 0;
+  align-self: center;
+}
+
+.footer {
+  background-color: #000;
+  color: white;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.slick-slide {
+  margin: 0 auto;
+}
+
+.slick-slide Card {
+  border: none;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: rgb(0, 0, 0)!important;
+}
+
+.cardRecomend {
+  padding: 0 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recomendationCard {
+  padding: 2%;
+  border: none;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  /* Player ratio: 100 / (1280 / 720) */
+  margin-bottom: 2%;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text2 {
+  color: gold;
+  font-size: 0.9vw;
+}
+
+@media (min-width: 320px) and (max-width:1024px) {
+  h4 {
+    font-family: 'Anton';
+    font-weight: 100;
+    margin: 0;
+    font-size: 5vw;
+  }
+  h6 {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .contentDetailMovie {
+    margin: 0;
+    padding-top: 15%;
+  }
+  .title {
+    font-size: 5vw;
+    font-weight: 700;
+    font-family: 'Libre Baskerville';
+    margin: 0;
+  }
+  .text {
+    font-size: 3vw;
+    font-family: 'Libre Baskerville';
+    padding: 5px 0;
+    margin: 0;
+  }
+  .tabheader {
+    margin: 5% auto;
+    width: 100%;
+    line-height: 5vw;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #252121;
+    color: #ffffff;
+    padding: 5%;
+  }
+  .tab--selected {
+    color: goldenrod;
+    border-bottom: 0.1px solid rgb(238, 238, 238);
+  }
+  .carousel {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .content, .contents {
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+  .cardsMovie {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .gridFilm {
+    width: 100%;
+    -webkit-transition: width 2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+    margin-bottom: 15%;
+  }
+  .gridFilm:hover .details {
+    width: 100%;
+    height: 57%;
+    top: 28%;
+  }
+  .componentBtn {
+    right: 0;
+    left: 0;
+    position: relative;
+    top: auto;
+    overflow: hidden;
+  }
+  .cardFoo span {
+    float: right;
+    clear: right;
+    font-weight: 500;
+    font-size: 5vw;
+  }
+  .vote {
+    float: right;
+    clear: right;
+    font-weight: 500;
+    font-size: 3vw;
+  }
+  .playbutton {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .cornerBtn {
+    width: 8%;
+    height: 20px;
+    margin: 0px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 7px;
+  }
+  .linkBottom {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    font-size: 3vw;
+  }
+  .text2 {
+    font-size: 3vw;
+    color: gold
+  }
+  .cardRecomend:hover .details {
+    width: 100%;
+    height: 75%;
+    top: 34%;
+    left: 50%;
+    opacity: 0.8;
+    color: #ffffff;
+    background-color: #000;
+    transition-duration: 0.1s;
+  }
+}
